@@ -14,3 +14,9 @@ $(document).ready(function() {
     });
   
 });
+
+$(document).ready(function () {
+    $(function () {
+        $("#my-special-div").draggable();
+    });   
+});

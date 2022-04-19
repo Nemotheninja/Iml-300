@@ -1,7 +1,68 @@
 body {
-    background-color: lime;
+    background-color: black;
 }
 
+.title {
+    font-size: 140px;
+font-family: 'Bebas Neue', cursive;
+}
+.title2 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Heebo', sans-serif;
+    color: mediumvioletred; 
+*/
+}
+.title2 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+}
+.title3 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: skyblue;
+}
+.title3 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: orangered;
+}
+.title3: hover {
+    color: yellow;
+}
+.top {
+    position: fixed;
+    left: 0;
+    padding: 1px 1
+        ]p/;p0o0;
+    width: 100vw;
+     background-color: red; 
+}
+/*
+.top2 {
+        left: 0;
+    padding: 1px 1
+        ]p/;p0o0;
+    width: 100vw;
+     background-color: skyblue; 
+}
+*/
+.easein {
+    padding: 4px 0;
+    transition: color .5s ease-in-out;
+    font-weight: 500;
+}
+a {
+    color: black
+}
+a:hover {
+    color: coral;
+/*    box-sizing: border-box;*/
+}
+    
 img {
     width: 400px;
     height: 400px;
@@ -14,4 +75,38 @@ img {
     width: 200px;
     border-radius: 0%;
     transition: width 2s, height 2s;
+}
+/*
+.canvas {
+    width: 100;
+    height: 100;
+    display: black;
+    position: fixed;
+    bottom: 0;
+    left, 0;
+    z-index: -1;
+    
+}*/
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot: hover {
+      height: 200px;
+  width: 200px;
+  background-color: coral;
+  border-radius: 50%;
+  display: inline-block;
+/*      color: coral;  */
+}
+
+#my-special-div {
+    position: fixed;
+    background: cyan;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
 }
