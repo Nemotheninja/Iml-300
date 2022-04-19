@@ -20,7 +20,7 @@ font-family: 'Heebo', sans-serif;
     font-family: 'Bebas Neue', cursive;
     color: red;
 }
-.title3 {
+.title4 {
     font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     color: skyblue;
@@ -32,6 +32,11 @@ font-family: 'Heebo', sans-serif;
 }
 .title3: hover {
     color: yellow;
+}
+.title5 {
+     font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
 }
 .top {
     position: relative;
