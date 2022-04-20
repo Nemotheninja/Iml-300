@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Firebase Text Input Demo</title>
 
-<head>
-    <title>jQuery demo</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Include firebase scripts from CDN      -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-<!-- add jQuery UI-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="main.js"></script>
-</head>
 
-<body>
-    <div id="my-special-div">
-        Drag me around
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- This input form controls submission of text input -->
+     <div class="color">
+    <div class="container">
+
+
+      <form id="text-input-form" onsubmit="return false">
+        <input type="text" id="text-input-entry" placeholder="How are you?" />
+        <input
+          type="submit"
+          id="text-input-submit"
+          onclick="submitlock()"
+          value="Share"
+        />
+      </form>
+
+      <div id="chat-container"></div>
     </div>
-</body>
-
+          </div>
+  </body>
 </html>

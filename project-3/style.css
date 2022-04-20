@@ -38,6 +38,11 @@ font-family: 'Heebo', sans-serif;
     font-family: 'Bebas Neue', cursive;
     color: black;
 }
+.title5 {
+     font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: blanchedalmond;
+}
 .top {
     position: relative;
     left: 0;
@@ -45,6 +50,10 @@ font-family: 'Heebo', sans-serif;
         ]p/;p0o0;
     width: 100vw;
      background-color: red; 
+}
+.position1 {
+    position: fixed;
+    bottom: 0%
 }
 /*
 .top2 {
@@ -92,21 +101,6 @@ img {
     z-index: -1;
     
 }*/
-.dot {
-  height: 200px;
-  width: 200px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dot: hover {
-      height: 200px;
-  width: 200px;
-  background-color: coral;
-  border-radius: 50%;
-  display: inline-block;
-/*      color: coral;  */
-}
 
 #my-special-div {
     position: fixed;
@@ -114,4 +108,153 @@ img {
     width: 120px;
     height: 120px;
     padding: 20px;
+}
+/*Donut graphs*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+.container {
+    display: flex;
+}
+
+.donut-chart-block {
+    text-align: right;
+}
+
+.donut-chart {
+  position: relative;
+	width: 200px;
+  height: 200px;
+/*	margin: 0 auto 2rem;*/
+	border-radius: 100%
+ }
+.donut-chart p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 0.5;
+}
+p.center {
+  background: #394264;
+  position: absolute;
+  text-align: center;
+font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+	
+.portion-block {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.circle {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+	
+	
+#part1 {
+    transform: rotate(0deg);
+  }
+
+	#part1 .circle {
+		background-color: #E64C65;
+		/*transform: rotate(76deg);*/
+		animation: first 2s 1 forwards;
+	  }
+	
+	
+/*
+#part2 {
+    transform: rotate(100deg);
+  }
+#part2 .circle {
+    background-color: #11A8AB;
+    animation: second 1s 1 forwards 1s;
+  }
+#part3 {
+    transform: rotate(250deg);
+}
+	#part3 .circle {
+		background-color: #4FC4F6;
+		animation: third 0.5s 1 forwards 2s;
+	}
+*/
+	
+	
+/* Animation */
+@keyframes first {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(50deg);}
+}
+	
+/*
+@keyframes second {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(150deg);}
+}
+	
+@keyframes third {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(111deg);}
+}*/
+
+/*firebase code*/
+
+.color {
+  background-color: #d9d2e9;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+/*     background-color: yellow; */
+  margin: 30px;
+  text-align: center;
+}
+
+input {
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 20px;
+}
+
+#chat-container{
+  font-size: 30px;
+/*   background-color: yellow; */
+  
+  margin:auto;
+  width:70vw;
+  display: grid;
+  grid-template-columns: auto  auto; 
+}
+
+.response{
+  background-color: #b299ed;
+  color:white;
+  margin:0.2em;
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 0 0 50px #fff;
+  
+  /*   border: 1px solid white; */
 }
