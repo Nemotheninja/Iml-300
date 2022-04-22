@@ -181,22 +181,37 @@ font-size: 28px;
 	  }
 	
 	
-/*
 #part2 {
-    transform: rotate(100deg);
+    transform: rotate(0deg);
   }
 #part2 .circle {
     background-color: #11A8AB;
     animation: second 1s 1 forwards 1s;
   }
+
 #part3 {
-    transform: rotate(250deg);
+    transform: rotate(0deg);
 }
 	#part3 .circle {
 		background-color: #4FC4F6;
-		animation: third 0.5s 1 forwards 2s;
+		animation: third 1s 1 forwards 1s;
 	}
-*/
+
+#part4 {
+    transform: rotate(100deg);
+}
+	#part4 .circle {
+		background-color: #4FC4F6;
+		animation: third 1s 1 forwards 1.21s;
+	}
+	
+#part5 {
+    transform: rotate(15deg);
+}
+	#part5 .circle {
+		background-color: #11A8AB;
+		animation: third 1s 1 forwards 1.1s;
+	}
 	
 	
 /* Animation */
@@ -205,16 +220,24 @@ font-size: 28px;
     to {transform: rotate(50deg);}
 }
 	
-/*
+
 @keyframes second {
     from {transform: rotate(0deg);}
-    to {transform: rotate(150deg);}
+    to {transform: rotate(180deg);}
 }
 	
 @keyframes third {
     from {transform: rotate(0deg);}
-    to {transform: rotate(111deg);}
-}*/
+    to {transform: rotate(180deg);}
+}
+@keyframes fourth {
+    from {transform: rotate(60deg);}
+    to {transform: rotate(340deg);}
+}
+@keyframes fifth {
+    from {transform: rotate(60deg);}
+    to {transform: rotate(340deg);}
+}
 
 /*firebase code*/
 
