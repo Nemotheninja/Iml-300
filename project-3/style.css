@@ -33,16 +33,32 @@ font-family: 'Heebo', sans-serif;
 .title3: hover {
     color: yellow;
 }
-.title5 {
+.title7 {
      font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     color: black;
+     text-align: center;
+/* padding: 10px;*/
 }
 .title5 {
      font-size: 80px;
     font-family: 'Bebas Neue', cursive;
     color: blanchedalmond;
 }
+.title6 {
+     font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    color: #4d0000;
+}
+.title8 {
+     font-size: 150px;
+    font-family: 'Bebas Neue', cursive;
+    color: #4d0000;
+         border-collapse: collapse;
+       padding: 0; 
+   margin: 0;
+}
+
 .top {
     position: relative;
     left: 0;
@@ -280,4 +296,66 @@ input {
   box-shadow: 0 0 50px #fff;
   
   /*   border: 1px solid white; */
+}
+
+/*----------*/
+
+#container {
+    text-align: center;
+    margin: 50px;
+}
+
+.wrap {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.wrap p {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: -8%;
+    padding: 5px;
+    text-align: center;
+    width: 113%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -10px;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.7);
+    transition: 1s;
+}
+
+.wrap img {
+    display: block;
+    width: 300px;
+    /*    height:200px;*/
+    margin: 5px;
+    -webkit-transition: opacity 0.26s ease-out;
+    -moz-transition: opacity 0.26s ease-out;
+    -ms-transition: opacity 0.26s ease-out;
+    -o-transition: opacity 0.26s ease-out;
+    transition: opacity 0.26s ease-out;
+    transition: 1500ms;
+}
+
+#container:hover img {
+    opacity: 0.5;
+}
+
+#container:hover .wrap:hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 2;
+    position: relative;
+    transition: 500ms;
+}
+
+.wrap:hover p {
+    opacity: 1;
 }
