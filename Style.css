@@ -9,7 +9,7 @@
 }
 
 .home {
-  color:forestgreen; padding:50px; text-align:center;
+  color:gold; padding:50px; text-align:center;
                  
 /*    font-family:Michroma; */
 /*     background-color:black*/
@@ -20,4 +20,11 @@
 font-family: 'Syne Mono', monospace;
 /*  color: white;*/
 /*  font-size: 18px;*/
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }

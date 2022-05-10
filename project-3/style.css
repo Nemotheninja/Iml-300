@@ -5,6 +5,7 @@ body {
 .title {
     font-size: 140px;
 font-family: 'Bebas Neue', cursive;
+    text-align:center;
 }
 .title2 {
     font-size: 80px;
